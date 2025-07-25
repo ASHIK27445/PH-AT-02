@@ -79,6 +79,7 @@
 .banner{
     display: flex;
     align-items: end;
+    margin-bottom: 120px;
 }
 
 .banner-title{
@@ -404,6 +405,7 @@ footer{
 
    .banner{
     flex-direction: column-reverse;
+    margin-bottom: 0;
    }
 
    .banner-right{
