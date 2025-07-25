@@ -571,4 +571,12 @@ footer{
     .social-icon{
         max-width: 216px;
     }
+
+    .footer-left p{
+    font-size: 1rem;
+    }
+
+    .footer-left p br{
+        display: none;
+    }
 }
