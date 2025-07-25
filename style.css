@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*Shared elements*/
 .section-title{
     font-size: 3.125rem;
@@ -570,6 +571,10 @@ footer{
 
     .social-icon{
         max-width: 216px;
+    }
+
+    .footer-left img{
+        height: 105px;
     }
 
     .footer-left p{
