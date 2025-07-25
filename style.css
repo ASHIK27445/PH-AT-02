@@ -24,6 +24,11 @@
     "wdth" 100;
 }
 
+.max-width-1140{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /*Navbar*/
 .navbar{
     display: flex ;
@@ -70,10 +75,6 @@
 }
 
 /*banner*/
-main{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 .banner{
     display: flex;
@@ -286,6 +287,99 @@ main{
 }
 
 
+/***JOin Section***/
+.join-section{
+    background-image: url("./assets/news-letter-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    margin:0;
+    width: 100vw;
+}
+
+.join-section div h3{
+    text-align: center;
+    padding: 0 120px;
+}
+.font-color-white{
+    color: #ffffff;
+}
+
+.subscribe{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #E95A08;
+    padding: 19px 53px;
+    border: none;
+}
+
+.email{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 19px 20px;
+    border: none;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 640px;
+}
+
+.join-section-input{
+    display: flex;
+    margin-top: 23px;
+}
+
+
+/**Footer****/
+
+footer{
+    max-width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+.footer-left img{
+    margin-bottom: 16px;
+}
+
+.footer-left p{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-ul ul{
+    list-style: none;
+}
+
+.footer-ul ul li a{
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.social-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+}
+
+.twitter{
+    max-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /****Responsive Queary for Mobile Device*/
 @media screen and (max-width: 556px) {
     
@@ -424,10 +518,11 @@ main{
 
     .deals-img1, .deals-img2, .deals-img3{
     border-radius: 14px;
-    width: 375px; /**can change calc(100% - 32px)*/
+    width: calc(100% - 32px); /**can change*/
     height: 185px;
     margin: 0 auto; /*also this: 0 16px;*/ 
     background-size: cover;
+    max-width: 375px;
     }
 
     .deals-img1 p, .deals-img2 p, .deals-img3 p{
@@ -442,5 +537,37 @@ main{
 
     .deals-section{
     margin-bottom: 40px;
+    }
+
+    .join-section{
+        height: 275px;
+    }
+    
+    .join-section div h3{
+    text-align: center;
+    padding: 0 40px;
+    }
+    .subscribe{
+    padding: 19px 12px;
+    }
+
+    .email{
+    font-size: 1rem;
+    padding: 19px 20px;
+    }
+
+    footer{
+    margin: 50px 14px;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+
+    .footer-ul{
+    gap: 26px;
+    }
+
+    .social-icon{
+        max-width: 216px;
     }
 }
